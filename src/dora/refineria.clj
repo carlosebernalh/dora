@@ -1,18 +1,17 @@
 (ns dora.refineria
-  (:require [clojure.java.shell :refer :all]
+  (:require [clj-time.core :as t]
+            [clojure.java.shell :refer :all]
+            [clojure.string :as str]
             [digitalize.core :refer :all]
-            [dora.data :refer :all]
             [dora.p.ckan :refer :all]
-            [dora.pro-file :refer :all]
             [dora.p.data-core :refer :all]
+            [dora.pro-file :refer :all]
             [dora.util :refer :all]
             [environ.core :refer [env]]
             [formaterr.core :refer :all]
             [monger.core :as mg]
             [mongerr.core :refer :all]
-            [tentacles.repos :refer [create-org-repo]]
-            [clojure.string :as str]
-            [clj-time.core :as t]))
+            [tentacles.repos :refer [create-org-repo]]))
 
 (def mirrored-files
   {:proyectos-opa "http://www.transparenciapresupuestaria.gob.mx/work/models/PTP/OPA/datosabiertos/proyectos_opa.csv"

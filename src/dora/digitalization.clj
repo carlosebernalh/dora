@@ -1,18 +1,8 @@
 (ns dora.digitalization
   "Digitalization of dates"
   (:require [clj-time.format :as f]
-            [clj-time.core :as t]
             [clojure.string :as s]
-            [digitalize.core :refer :all]
-            [mongerr.core :refer :all]
-            [dora.util :refer :all]
-            [monger.collection :as mc]
-            [monger.command :as cmd]
-            [monger.core :as mg]
-            [monger.db :refer [get-collection-names]]
-            monger.joda-time
-            [monger.operators :refer :all]
-            [nillib.tipo :refer :all]))
+            [digitalize.core :refer :all]))
 
 (defn char-type-regex [s]
   (if (re-find #"\d" s)

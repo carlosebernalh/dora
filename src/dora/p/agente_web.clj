@@ -2,18 +2,13 @@
   "Web agent for broken link identification"
   (:require [clj-http.client :as http]
             [clj-time.core :as t]
-            [clj-time.format :as f]
             [clojure.java.shell :as sh]
             [clojure.set :as set]
             [clojure.string :as s]
             [dora.util :refer :all]
-            [dora.p.zendesk :refer :all]
-            [monger.operators :refer :all]
-            monger.joda-time
             [mongerr.core :refer :all]
             [nillib.formats :refer :all]
-            [postal.core :refer :all]
-            [ring.util.codec :refer :all])
+            [postal.core :refer :all])
   (:gen-class))
 
 (defn error

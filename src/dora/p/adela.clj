@@ -2,9 +2,9 @@
   (:require [clojure.string :as s]
             [dora.p.ckan :refer :all]
             [environ.core :refer [env]]
+            [formaterr.core :refer :all]
             [monger.operators :refer :all]
-            [mongerr.core :refer :all]
-            [formaterr.core :refer :all]))
+            [mongerr.core :refer :all]))
 
 (def adela-url (or (env :adela-url) "http://adela.datos.gob.mx/")) ;"http://162.243.229.121/"
 

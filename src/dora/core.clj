@@ -4,15 +4,11 @@
             [clojail.core :refer [sandbox]]
             [clojail.jvm :refer :all]
             [clojail.testers :refer :all]
-            [clojure.set :refer :all]
-            [clojure.stacktrace :refer [print-cause-trace]]
-            [clojure.string :refer [trim]]
+            [clojure.string :as str :refer [trim]]
             [clojure.tools.logging :refer [info warn]]
-            [mongerr.core :refer [db-find db-findf db-text-search]]
             [nillib.tipo :refer :all]
             [noir.response :as resp]
-            [noir.session :as session]
-            [clojure.string :as str])
+            [noir.session :as session])
   (:import (java.io StringWriter)
            (java.util.concurrent TimeoutException)))
 

@@ -1,16 +1,15 @@
 (ns dora.p.zendesk
   "Zendesk API wrapper"
-  (:require [org.httpkit.client :as client]
-            [clojure.data.json :as json]
-            [clojure.string :as s]
-            [clj-pdf.core :refer :all]
-            [clj-time.format :as f]
+  (:require [clj-pdf.core :refer :all]
             [clj-time.core :as t]
+            [clj-time.format :as f]
+            [clojure.data.json :as json]
+            [clojure.string :as str]
             [environ.core :refer [env]]
             [mongerr.core :refer :all]
             [nillib.formats :refer :all]
             [nillib.text :refer :all]
-            [clojure.string :as str]))
+            [org.httpkit.client :as client]))
 
 (def zen-auth {:basic-auth [(env :zendesk-email) (env :zendesk-password)]})
 

@@ -1,12 +1,12 @@
 (ns dora.util
   "Various utility functions"
-  (:require [clojure.java.io :as io]
+  (:require [clj-http.client :as http]
+            [clojure.java.io :as io]
             [clojure.java.shell :refer :all]
             [clojure.string :as s]
-            [clj-http.client :as http]
-            [mongerr.core :refer :all]
+            [clojure.tools.analyzer.passes.trim :as str]
             [formaterr.core :refer :all]
-            [clojure.string :as str]))
+            [mongerr.core :refer :all]))
 
 (defn distinct-by
   "Returns a lazy sequence of the elements of coll, removing any elements that

@@ -1,19 +1,12 @@
 (ns dora.p.ckan
   "Wrapper for parts of CKAN API"
   (:require [clj-http.client :as http]
-            [clj-http.util :refer :all]
             [clojure.data.json :as json]
             [clojure.string :as s]
             [digitalize.core :refer :all]
             [environ.core :refer [env]]
-            [mongerr.core :refer :all]
-            [monger.core :as mg]
-            [monger.collection :as mc]
-            [monger.operators :refer :all]
-            monger.joda-time
-            [nillib.formats :refer :all])
-  (:import [com.mongodb MongoOptions ServerAddress]
-           org.apache.commons.validator.UrlValidator))
+            [mongerr.core :refer :all])
+  (:import (org.apache.commons.validator UrlValidator)))
 
 (defn get-json
   "GET a JSON endpoint"

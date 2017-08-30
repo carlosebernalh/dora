@@ -1,26 +1,26 @@
 (ns dora.server
   "Ring server, main api"
   (:require [cemerick.friend :as friend]
-            (cemerick.friend [workflows :as workflows]
-                             [credentials :as creds])
+            [cemerick.friend.credentials :as creds]
+            [cemerick.friend.workflows :as workflows]
             [compojure.core :refer :all]
             [compojure.route :as route]
-            monger.json
-            [noir.util.middleware :as nm]
-            [ring.adapter.jetty :as jetty]
-            [ring.middleware.cors :refer [wrap-cors]]
-            [ring.middleware.json :refer [wrap-json-response wrap-json-body wrap-json-params]]
-            [ring.middleware.keyword-params :refer [wrap-keyword-params]]
-            [ring.middleware.nested-params :refer [wrap-nested-params]]
-            [ring.middleware.params :refer [wrap-params]]
             [dora.core :refer :all]
             [dora.data :refer :all]
             [dora.p.adela :refer :all]
             [dora.p.data-core :refer :all]
-            [dora.pro-file :refer :all]
             [dora.util :refer :all]
+            [formaterr.core :refer :all]
             [mongerr.core :refer :all]
-            [formaterr.core :refer :all])
+            [noir.util.middleware :as nm]
+            [ring.adapter.jetty :as jetty]
+            [ring.middleware.cors :refer [wrap-cors]]
+            [ring.middleware.json :refer [wrap-json-body
+                                          wrap-json-params
+                                          wrap-json-response]]
+            [ring.middleware.keyword-params :refer [wrap-keyword-params]]
+            [ring.middleware.nested-params :refer [wrap-nested-params]]
+            [ring.middleware.params :refer [wrap-params]])
   (:gen-class))
 
 (defn generate-csv-response

@@ -1,13 +1,9 @@
 (ns dora.p.data-core
   "Copy and update the collections that are used in data fusion"
-  (:require [chime :refer [chime-at chime-ch]]
+  (:require [chime :refer [chime-at]]
             [clj-time.core :as t]
             [clj-time.periodic :refer [periodic-seq]]
-            [clojure.core.async :as a :refer [<! go-loop]]
-            [clojure.set :refer :all]
-            [clojure.string :as s]
             [digitalize.core :refer :all]
-            ;[dgm-analytics.core :refer :all]
             [dora.data :refer :all]
             [dora.p.adela :refer :all]
             [dora.p.agente-web :refer :all]
@@ -15,9 +11,8 @@
             [dora.p.zendesk :refer :all]
             [dora.pro-file :refer :all]
             [monger.operators :refer :all]
-            [mongerr.core :refer :all]
-            [nillib.formats :refer :all])
-  (:import [org.joda.time DateTimeConstants DateTimeZone]))
+            [mongerr.core :refer :all])
+  (:import (org.joda.time DateTimeZone)))
 
 (defn dc-add-query
   [campo value-fn]
