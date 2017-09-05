@@ -55,7 +55,7 @@
 (defn ids-from-refineria-endpoint
   [m]
   (zipmap [:dataset-id :resource-id]
-          (take-last 2 (re-seq #"[^\.]" (:endpoint m)))))
+          (take-last 2 (re-seq #"[^\.]+" (:endpoint m)))))
 
 (defn resource-data-refineria-endpoint
   [resources m]
@@ -73,7 +73,8 @@
   (let [resources (db :resources)]
     (map #(merge % (resource-data-refineria-endpoint
                     resources
-                    (ids-from-refineria-endpoint %))))))
+                    (ids-from-refineria-endpoint %)))
+         collections)))
 
 (defn api-catalog
   "Store the collections names in `api-catalog`"
@@ -81,10 +82,10 @@
   (let [raw-catalog (map #(hash-map :endpoint %
                                     :url (str "https://api.datos.gob.mx/v1/" %))
                          (db))
-        not-refineria (sort-by :endpoint (remove #(re-find #"refineria." (:endpoint %))
+        not-refineria (sort-by :endpoint (remove #(re-find #"refineria\." (:endpoint %))
                                                 raw-catalog))
         yes-refineria (sort-by :endpoint (refineria-api-catalog
-                                          (filter #(re-find #"refineria." (:endpoint %))
+                                          (filter #(re-find #"refineria\." (:endpoint %))
                                                   raw-catalog)))]
     (update-db :api-catalog
                (concat not-refineria yes-refineria))))
