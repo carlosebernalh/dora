@@ -63,7 +63,7 @@
     (let [r (first (filter #(= (:resource-id m)
                                (:id %))
                            resources))]
-      (assoc m :url (:url r)
+      (assoc m :file-url (:url r)
              :name (:name r)
              :description (:description r)))
     (catch Exception e m)))
