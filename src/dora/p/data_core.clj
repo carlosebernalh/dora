@@ -52,13 +52,42 @@
                 s))
     s))
 
+(defn ids-from-refineria-endpoint
+  [m]
+  (zipmap [:dataset-id :resource-id]
+          (take-last 2 (re-seq #"[^\.]" (:endpoint m)))))
+
+(defn resource-data-refineria-endpoint
+  [resources m]
+  (try
+    (let [r (first (filter #(= (:resource-id m)
+                               (:id %))
+                           resources))]
+      (assoc m :url (:url r)
+             :name (:name r)
+             :description (:description r)))
+    (catch Exception e m)))
+
+(defn refineria-api-catalog
+  [collections]
+  (let [resources (db :resources)]
+    (map #(merge % (resource-data-refineria-endpoint
+                    resources
+                    (ids-from-refineria-endpoint %))))))
+
 (defn api-catalog
   "Store the collections names in `api-catalog`"
   []
-  (update-db :api-catalog
-             (map #(hash-map :endpoint %
-                             :url (str "https://api.datos.gob.mx/v1/" %))
-                  (db))))
+  (let [raw-catalog (map #(hash-map :endpoint %
+                                    :url (str "https://api.datos.gob.mx/v1/" %))
+                         (db))
+        not-refineria (sort-by :endpoint (remove #(re-find #"refineria." (:endpoint %))
+                                                raw-catalog))
+        yes-refineria (sort-by :endpoint (refineria-api-catalog
+                                          (filter #(re-find #"refineria." (:endpoint %))
+                                                  raw-catalog)))]
+    (update-db :api-catalog
+               (concat not-refineria yes-refineria))))
 
 (defn flatten-adela-catalogs
   "genera las apis adela-datasets y adela-resources"
