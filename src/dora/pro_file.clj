@@ -43,10 +43,6 @@
                                         (catch Exception e (= url (:url %))))
                                   analytics-data))))))
 
-(defn inventory-resources
-  []
-  (mapcat :distribution (mapcat :dataset (db-find :adela-inventories))))
-
 (defn flatten-inventory [i]
   (map #(hash-map :dataset %
                   :inventory (dissoc i :dataset))
