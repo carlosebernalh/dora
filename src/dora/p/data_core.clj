@@ -84,7 +84,8 @@
   "Store the collections names in `api-catalog`"
   []
   (let [raw-catalog (map #(hash-map :endpoint %
-                                    :url (str "https://api.datos.gob.mx/v1/" %))
+                                    :url (str "https://api.datos.gob.mx/v1/" %)
+                                    :variables (keys (db-findf %)))
                          (db))
         not-refineria (sort-by :endpoint (remove #(re-find #"refineria\." (:endpoint %))
                                                 raw-catalog))
