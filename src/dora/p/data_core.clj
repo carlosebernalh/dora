@@ -74,10 +74,11 @@
 (defn refineria-api-catalog
   [collections]
   (let [resources (db :resources)]
-    (map #(merge % (resource-data-refineria-endpoint
-                    resources
-                    (ids-from-refineria-endpoint %)))
-         collections)))
+    (remove #(empty? (:name %))
+            (map #(merge % (resource-data-refineria-endpoint
+                            resources
+                            (ids-from-refineria-endpoint %)))
+                 collections))))
 
 (defn api-catalog
   "Store the collections names in `api-catalog`"
