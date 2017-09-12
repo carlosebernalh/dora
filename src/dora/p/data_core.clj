@@ -74,9 +74,9 @@
 (defn refineria-api-catalog
   [collections]
   (let [resources (db :resources)]
-    (map #(resource-data-refineria-endpoint
+    (map #(merge % (resource-data-refineria-endpoint
                     resources
-                    (ids-from-refineria-endpoint %))
+                    (ids-from-refineria-endpoint %)))
          collections)))
 
 (defn api-catalog
