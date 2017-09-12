@@ -15,7 +15,8 @@
 
 (def mirrored-files
   {:proyectos-opa "http://www.transparenciapresupuestaria.gob.mx/work/models/PTP/OPA/datosabiertos/proyectos_opa.csv"
-   :prog-avance-de-indicadores "http://www.transparenciapresupuestaria.gob.mx/work/models/PTP/DatosAbiertos/Calendarios_MIR_2008-2014/prog_avance_de_indicadores.csv"})
+   :prog-avance-de-indicadores "http://www.transparenciapresupuestaria.gob.mx/work/models/PTP/DatosAbiertos/Calendarios_MIR_2008-2014/prog_avance_de_indicadores.csv"
+   :opa "http://www.transparenciapresupuestaria.gob.mx/work/models/PTP/OPA/datosabiertos/opa.csv"})
 
 (defn apify-files []
   (doall
