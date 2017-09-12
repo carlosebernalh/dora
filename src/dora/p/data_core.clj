@@ -63,17 +63,20 @@
     (let [r (first (filter #(= (:resource-id m)
                                (:id %))
                            resources))]
-      (assoc m :file-url (:url r)
+      (assoc m
+             :file-url (:url r)
              :name (:name r)
-             :description (:description r)))
+             :description (:description r)
+             :dataset-url (str "https://api.datos.gob.mx/v1/datasets?id=" (:dataset-id m))
+             :resource-url (str "https://api.datos.gob.mx/v1/resources?id=" (:resource-id m))))
     (catch Exception e m)))
 
 (defn refineria-api-catalog
   [collections]
   (let [resources (db :resources)]
-    (map #(merge % (resource-data-refineria-endpoint
+    (map #(resource-data-refineria-endpoint
                     resources
-                    (ids-from-refineria-endpoint %)))
+                    (ids-from-refineria-endpoint %))
          collections)))
 
 (defn api-catalog
