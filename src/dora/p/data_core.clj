@@ -64,10 +64,10 @@
                                (:id %))
                            resources))]
       (assoc m
-             :file-url (:url r)
-             :name (:name r)
-             :description (:description r)
-             :dataset-url (str "https://api.datos.gob.mx/v1/datasets?id=" (:dataset-id m))
+             :file-url     (:url r)
+             :name         (:name r)
+             :description  (:description r)
+             :dataset-url  (str "https://api.datos.gob.mx/v1/datasets?id=" (:dataset-id m))
              :resource-url (str "https://api.datos.gob.mx/v1/resources?id=" (:resource-id m))))
     (catch Exception e m)))
 
@@ -83,9 +83,10 @@
 (defn api-catalog
   "Store the collections names in `api-catalog`"
   []
-  (let [raw-catalog (map #(hash-map :endpoint %
-                                    :url (str "https://api.datos.gob.mx/v1/" %)
-                                    :variables (keys (db-findf %)))
+  (let [raw-catalog (map #(hash-map :endpoint  %
+                                    :url       (str "https://api.datos.gob.mx/v1/" %)
+                                    :variables (keys (db-findf %))
+                                    :count     (db-count %))
                          (db))
         not-refineria (sort-by :endpoint (remove #(re-find #"refineria\." (:endpoint %))
                                                 raw-catalog))
