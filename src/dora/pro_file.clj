@@ -90,7 +90,7 @@
                  :id (str (:id (:dataset result)))
                  ;:ieda (ieda? url)
                  :calificacion (calificacion result recommendations)))
-        (catch Exception e (println "Exception: " e)))))
+        (catch Exception e (db-insert :data-fusion-exceptions {:exception (str e) :result result :function "dora-view-inventory"})))))
 
 (defn orphan-resources [inventories]
   (let [inv-urls (map #(:downloadURL (:resource (:adela %))) inventories)]
@@ -121,8 +121,9 @@
                       ;:pageviews {:total (analytics (:id resource) analytics-data-views)}
                        }
            :file-metadata metadata
-           :recommendations recommendations})
-        (catch Exception e (println "Exception: " e)))))
+           :recommendations recommendations
+           :calificacion (calificacion {:resource resource :dataset dataset} recommendations)})
+        (catch Exception e (db-insert :data-fusion-exceptions {:exception (str e) :resource resource :function "dora-view-resources"})))))
 
 (defn data-fusion []
   (let [inventories (dora-view-inventory)]
