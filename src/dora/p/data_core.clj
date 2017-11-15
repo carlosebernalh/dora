@@ -137,7 +137,7 @@
     (update-db :zendesk-satisfaction all-satisfaction)
     (update-db :zendesk-users all-users)
     (update-adela)
-                                        ;(update-db :google_analytics download-data)
+   ;(update-db :google_analytics download-data)
     (println "cleaning up old files")
     (mv-old-file)               ;(get-status-1)
     (println "running save-broken-links")
