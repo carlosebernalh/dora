@@ -70,7 +70,7 @@
    (let [analytics  (db :google_analytics)
          analytics-views (db :google_analytics_views)
          broken (broken-today)]
-     (map #(dora-view-inventory % analytics analytics-views broken)
+     (pmap #(dora-view-inventory % analytics analytics-views broken)
           (inventory-resources-denormalized))))
   ([result analytics-data analytics-data-views todays-broken]
    (try (let [url (:downloadURL (:resource result))
@@ -104,7 +104,7 @@
    (let [analytics  (db :google_analytics)
          analytics-views (db :google_analytics_views)
          broken (broken-today)]
-     (map #(dora-view-resources %
+     (pmap #(dora-view-resources %
                                 analytics
                                 analytics-views
                                 broken)
