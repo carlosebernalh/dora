@@ -82,7 +82,7 @@
                        refineria-collections)
         invalids (filter #(empty? (:name %))
                          refineria-collections)]
-    (doall (map #(db-drop (:endpoint %)) invalids))
+    (doall (map #(db-drop (:endpoint %)) invalids)) ;; Delete refineria collections no longer linking to valid resource/dataset
     valids))
 
 (defn api-catalog
@@ -95,7 +95,7 @@
                          (db))
         not-refineria (sort-by :endpoint (remove #(re-find #"refineria\." (:endpoint %))
                                                 raw-catalog))
-        yes-refineria (sort-by :endpoint (refineria-api-catalog&
+        yes-refineria (sort-by :endpoint (refineria-api-catalog
                                           (filter #(re-find #"refineria\." (:endpoint %))
                                                   raw-catalog)))]
     (update-db :api-catalog
