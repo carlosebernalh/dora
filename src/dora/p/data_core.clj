@@ -73,12 +73,17 @@
 
 (defn refineria-api-catalog
   [collections]
-  (let [resources (db :resources)]
-    (remove #(empty? (:name %))
-            (map #(merge % (resource-data-refineria-endpoint
-                            resources
-                            (ids-from-refineria-endpoint %)))
-                 collections))))
+  (let [resources             (db :resources)
+        refineria-collections (map #(merge % (resource-data-refineria-endpoint
+                                              resources
+                                              (ids-from-refineria-endpoint %)))
+                                   collections)
+        valids (remove #(empty? (:name %))
+                       refineria-collections)
+        invalids (filter #(empty? (:name %))
+                         refineria-collections)]
+    (doall (map #(db-drop (:endpoint %)) invalids))
+    valids))
 
 (defn api-catalog
   "Store the collections names in `api-catalog`"
@@ -90,7 +95,7 @@
                          (db))
         not-refineria (sort-by :endpoint (remove #(re-find #"refineria\." (:endpoint %))
                                                 raw-catalog))
-        yes-refineria (sort-by :endpoint (refineria-api-catalog
+        yes-refineria (sort-by :endpoint (refineria-api-catalog&
                                           (filter #(re-find #"refineria\." (:endpoint %))
                                                   raw-catalog)))]
     (update-db :api-catalog
