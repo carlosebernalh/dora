@@ -52,55 +52,6 @@
                 s))
     s))
 
-(defn ids-from-refineria-endpoint
-  [m]
-  (zipmap [:dataset-id :resource-id]
-          (take-last 2 (re-seq #"[^\.]+" (:endpoint m)))))
-
-(defn resource-data-refineria-endpoint
-  [resources m]
-  (try
-    (let [r (first (filter #(= (:resource-id m)
-                               (:id %))
-                           resources))]
-      (assoc m
-             :file-url     (:url r)
-             :name         (:name r)
-             :description  (:description r)
-             :dataset-url  (str "https://api.datos.gob.mx/v1/datasets?id=" (:dataset-id m))
-             :resource-url (str "https://api.datos.gob.mx/v1/resources?id=" (:resource-id m))))
-    (catch Exception e m)))
-
-(defn refineria-api-catalog
-  [collections]
-  (let [resources             (db :resources)
-        refineria-collections (map #(merge % (resource-data-refineria-endpoint
-                                              resources
-                                              (ids-from-refineria-endpoint %)))
-                                   collections)
-        valids (remove #(empty? (:name %))
-                       refineria-collections)
-        invalids (filter #(empty? (:name %))
-                         refineria-collections)]
-    (doall (map #(db-drop (:endpoint %)) invalids)) ;; Delete refineria collections no longer linking to valid resource/dataset
-    valids))
-
-(defn api-catalog
-  "Store the collections names in `api-catalog`"
-  []
-  (let [raw-catalog (map #(hash-map :endpoint  %
-                                    :url       (str "https://api.datos.gob.mx/v1/" %)
-                                    :variables (keys (db-findf %))
-                                    :count     (db-count %))
-                         (db))
-        not-refineria (sort-by :endpoint (remove #(re-find #"refineria\." (:endpoint %))
-                                                raw-catalog))
-        yes-refineria (sort-by :endpoint (refineria-api-catalog
-                                          (filter #(re-find #"refineria\." (:endpoint %))
-                                                  raw-catalog)))]
-    (update-db :api-catalog
-               (concat not-refineria yes-refineria))))
-
 (defn flatten-adela-catalogs
   "genera las apis adela-datasets y adela-resources"
   []
@@ -125,8 +76,7 @@
                 (println "updating inventories")
                 (update-db :adela-inventories adela-inventory)
                 (println "flattening catalogs")
-                (flatten-adela-catalogs)
-                ]))
+                (flatten-adela-catalogs)]))
 
 (defn fusion [] (update-db :data-fusion data-fusion))
 
@@ -144,7 +94,6 @@
     (update-adela)
    ;(update-db :google_analytics download-data)
     (println "cleaning up old files")
-    (mv-old-file)               ;(get-status-1)
     (println "running save-broken-links")
     (save-broken-links)
     ;(validate-dgm)
