@@ -120,9 +120,9 @@
         the-resources (doall (mapcat resources-from-dataset data))]
     (when (seq data)
       (db-delete :datasets)
-      (db-insert :datasets data)
+      (db-insert :datasets (filter map? data))
       (db-delete :resources)
-      (db-insert :resources the-resources))))
+      (db-insert :resources (filter map? the-resources)))))
 
 (defn valid-url? [url-str]
   (let [validator (UrlValidator.)]
