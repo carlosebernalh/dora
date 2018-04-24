@@ -122,7 +122,8 @@
       (db-delete :datasets)
       (db-insert :datasets (filter map? data))
       (db-delete :resources)
-      (db-insert :resources (filter map? the-resources)))))
+      (db-insert :resources (filter map? the-resources))
+      (db-insert :historic-datasets {:data data}))))
 
 (defn valid-url? [url-str]
   (let [validator (UrlValidator.)]
