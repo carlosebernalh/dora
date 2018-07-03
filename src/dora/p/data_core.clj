@@ -107,6 +107,7 @@
   (doall-recur
    [(update-all-ckan)
     (update-adela)
+    (fusion)
     (dc-update)]))
 
 (defn metrics []
