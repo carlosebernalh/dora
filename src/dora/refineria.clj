@@ -161,7 +161,15 @@
    "SNEDH-f01384e9-2405-4904-8e63-80f3a2d76b6f" "https://datosabiertos.stps.gob.mx/Datos/DGRA/Registro_de_nuevos_sindicatos_anualmente_UcR04.csv",
    "SNEDH-cc72a9c2-8962-4c2b-82d3-8d82ec1cb330" "https://datosabiertos.stps.gob.mx/Datos/DGRA/Porcentaje_de_los_sindicatos_con_un_numero_de_afiliados_UfR01.csv",
    "SNEDH-45b750e8-8ddb-46cf-b822-358b120e10d0" "https://datosabiertos.stps.gob.mx/Datos/DGRA/Numero_de_trabajadores_incluidos_en_solicitudes_de_inscripción_de_sindicatos_Ent_Fed_UaP09b2.csv",
-   "SNEDH-35e80c9f-cf4c-41d8-876a-3a8c87d1bb49" "https://datosabiertos.stps.gob.mx/Datos/DGRA/Num_solicitudes_inscripcion_sindicatos_rechazadas_Ent_Fed_UaP09a2.csv"})
+   "SNEDH-35e80c9f-cf4c-41d8-876a-3a8c87d1bb49" "https://datosabiertos.stps.gob.mx/Datos/DGRA/Num_solicitudes_inscripcion_sindicatos_rechazadas_Ent_Fed_UaP09a2.csv"
+   ,"SNEDH-ba7e71db-5089-4bc1-b0c7-7cd802b3c098" "https://drive.google.com/uc?export=download&id=1hHsrSOFwY25hY3Ffs6hZJnpC38HJeXm3"
+   ,"SNEDH-944c7e38-1d5a-4750-ae8b-e884f462ef17" "https://drive.google.com/uc?export=download&id=1aUkifUu86iqikKjil50Uku8SclUU5Z1Y"
+   ,"SNEDH-31989aa7-2072-4b2c-9571-e24f239aaab4" "https://datosabiertos.segob.gob.mx/DatosAbiertos/UDDH_Expedientes"
+   ,"SNEDH-8dbb8db5-d502-4910-9aef-4189c32ed92a" "https://datosabiertos.segob.gob.mx/DatosAbiertos/UDDH_Defensoras"
+   ,"SNEDH-71626ea2-8bbd-4ef3-888d-70f1d8613904" "https://drive.google.com/uc?export=download&id=1uR7lyueZ2jREaMVKtfIffSrI5lEE5zeb"
+   ,"SNEDH-1cd40277-c0e4-4248-b10f-6a49f79caa15" "https://drive.google.com/uc?export=download&id=1uR7lyueZ2jREaMVKtfIffSrI5lEE5zeb"
+   ,"SNEDH-678bb367-ca3c-44d4-9365-5e821be00c9d" "https://drive.google.com/uc?export=download&id=1tlSOH4OCH1Ki7WTtyPYen7gdPqy5RQD0"
+   ,"SNEDH-9bbeb41f-ac51-4628-a01e-33ab8bb09357" "https://drive.google.com/uc?export=download&id=1DLQBKXao0xuA1FCeVjCsX9ythSteeNqF"})
 
 (defn apify-files []
   (doall
