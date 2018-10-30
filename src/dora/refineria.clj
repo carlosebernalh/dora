@@ -172,8 +172,7 @@
    ,"SNEDH-9bbeb41f-ac51-4628-a01e-33ab8bb09357" "https://drive.google.com/uc?export=download&id=1DLQBKXao0xuA1FCeVjCsX9ythSteeNqF"
    ,"SNEDH-9cb4002c-f00d-4860-a6e7-6ad42ecd217d" "http://datosdgai.cultura.gob.mx/pss/CiP01.csv"
    ,"SNEDH-9e0cb023-3e34-4768-95a4-9d8512998033" "http://sep.gob.mx/dgticDatos/dgaigypt/ecP01.csv"
-   ,"SNEDH-c1ec6909-5149-4052-8a22-1c74f2a367b1" "http://sep.gob.mx/dgticDatos/dgaigypt/eaP05.csv"
-   ,"SNEDH-9e0cb023-3e34-4768-95a4-9d8512998033" "http://sep.gob.mx/dgticDatos/dgaigypt/ecP01.csv"})
+   ,"SNEDH-c1ec6909-5149-4052-8a22-1c74f2a367b1" "http://sep.gob.mx/dgticDatos/dgaigypt/eaP05.csv"})
 
 (defn apify-files []
   (doall
