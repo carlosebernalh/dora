@@ -151,13 +151,12 @@
    "SNEDH-e2ba76f5-82f4-44dd-bea8-20f84488d344" "http://datosdgai.cultura.gob.mx/pss/CcR03b.csv",
    "SNEDH-2aea684f-9869-4bc2-9fcc-572bf8e5f712" "https://amilcar.pm/datos/CiR01.csv",
    "SNEDH-75ab4c8d-0b1f-4697-ac6d-e682f6d40c94" "https://amilcar.pm/datos/CiR04.csv",
-   "SNEDH-fc1949a8-a9fd-47bb-8e9b-7d1816d3d76b" "http://www.dgepj.cjf.gob.mx/DatosAbiertos/CjR01.csv",
-   "SNEDH-4a28f010-cefc-4e53-8304-49ccad242a46" "http://datosabiertospgr.blob.core.windows.net/sansalvador/ExplotacionSexualdeMenoresApCi.csv",
-   "SNEDH-3fefcd7b-e058-4360-b673-108b154aa468" "http://datosabiertospgr.blob.core.windows.net/sansalvador/PorcentajedeDeterminacionesTratadePersonas.csv",
-   "SNEDH-5090591a-58b0-49e2-9f36-e865e8aa4b36" "http://datosabiertospgr.blob.core.windows.net/sansalvador/MjR02a.csv",
-   "SNEDH-fc561b8e-c9b6-4a1d-a845-e82c04d9c036" "http://datosabiertospgr.blob.core.windows.net/sansalvador/MjE03a.csv",
-   "SNEDH-c4b3ad8e-ffaf-4f2f-a9e8-0faa6b8a9256" "http://datosabiertospgr.blob.core.windows.net/sansalvador/HostigamientoSexualApCi.csv",
-   "SNEDH-2cd860c4-6789-4d8e-8dfb-81c927c235de" "https://datosabiertos.stps.gob.mx/Datos/DGRA/Porcentaje_de_mujeres_en_la_dirigencia_sindical_UdR02.csv",
+   "SNEDH-fc1949a8-a9fd-47bb-8e9b-7d1816d3d76b" "http://www.dgepj.cjf.gob.mx/DatosAbiertos/CjR01.csv"
+  ,"SNEDH-fc561b8e-c9b6-4a1d-a845-e82c04d9c036" "http://datosabiertospgr.blob.core.windows.net/sansalvador-pgr/TasadeFuncionariosEspecializadosDelitosAmbientales.csv"
+  ,"SNEDH-5090591a-58b0-49e2-9f36-e865e8aa4b36" "http://datosabiertospgr.blob.core.windows.net/sansalvador-pgr/MjR02a.csv"
+  ,"SNEDH-4a28f010-cefc-4e53-8304-49ccad242a46" "http://datosabiertospgr.blob.core.windows.net/sansalvador-pgr/ExplotacionSexualdeMenoresApCi.csv"
+  ,"SNEDH-c4b3ad8e-ffaf-4f2f-a9e8-0faa6b8a9256" "http://datosabiertospgr.blob.core.windows.net/sansalvador-pgr/HostigamientoSexualApCi.csv"
+  ,"SNEDH-3fefcd7b-e058-4360-b673-108b154aa468" "http://datosabiertospgr.blob.core.windows.net/sansalvador-pgr/PorcentajedeDeterminacionesTratadePersonas.csv"   "SNEDH-2cd860c4-6789-4d8e-8dfb-81c927c235de" "https://datosabiertos.stps.gob.mx/Datos/DGRA/Porcentaje_de_mujeres_en_la_dirigencia_sindical_UdR02.csv",
    "SNEDH-f01384e9-2405-4904-8e63-80f3a2d76b6f" "https://datosabiertos.stps.gob.mx/Datos/DGRA/Registro_de_nuevos_sindicatos_anualmente_UcR04.csv",
    "SNEDH-cc72a9c2-8962-4c2b-82d3-8d82ec1cb330" "https://datosabiertos.stps.gob.mx/Datos/DGRA/Porcentaje_de_los_sindicatos_con_un_numero_de_afiliados_UfR01.csv",
    "SNEDH-45b750e8-8ddb-46cf-b822-358b120e10d0" "https://datosabiertos.stps.gob.mx/Datos/DGRA/Numero_de_trabajadores_incluidos_en_solicitudes_de_inscripci%C3%B3n_de_sindicatos_Ent_Fed_UaP09b2.csv",
