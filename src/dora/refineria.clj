@@ -173,7 +173,9 @@
    ,"SNEDH-9e0cb023-3e34-4768-95a4-9d8512998033" "http://sep.gob.mx/dgticDatos/dgaigypt/ecP01.csv"
    ,"SNEDH-c1ec6909-5149-4052-8a22-1c74f2a367b1" "http://sep.gob.mx/dgticDatos/dgaigypt/eaP05.csv"
    ,"SNEDH-91b06917-bc9e-4c2d-a837-7f540f90a695" "http://www.conapo.gob.mx/work/models/CONAPO/Datos_Abiertos/Proyecciones2018/prot_san_sal_ev_proyecciones.csv"
-   ,"SNEDH-56e1c10f-cb92-4b43-9471-06d5450dfce5" "http://www.conapo.gob.mx/work/models/CONAPO/Datos_Abiertos/Proyecciones2018/prot_san_sal_ev_sex_proyecciones.csv"})
+   ,"SNEDH-56e1c10f-cb92-4b43-9471-06d5450dfce5" "http://www.conapo.gob.mx/work/models/CONAPO/Datos_Abiertos/Proyecciones2018/prot_san_sal_ev_sex_proyecciones.csv"
+   ,"SNEDH-prueba-SEP" "http://sep.gob.mx/dgticDatos/dgaigypt/2019/EdP06.csv"
+   })
 
 (defn apify-files []
   (doall
