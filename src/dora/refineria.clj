@@ -175,6 +175,8 @@
    ,"SNEDH-91b06917-bc9e-4c2d-a837-7f540f90a695" "http://www.conapo.gob.mx/work/models/CONAPO/Datos_Abiertos/Proyecciones2018/prot_san_sal_ev_proyecciones.csv"
    ,"SNEDH-56e1c10f-cb92-4b43-9471-06d5450dfce5" "http://www.conapo.gob.mx/work/models/CONAPO/Datos_Abiertos/Proyecciones2018/prot_san_sal_ev_sex_proyecciones.csv"
    ,"SNEDH-prueba-SEP" "http://sep.gob.mx/dgticDatos/dgaigypt/2019/EdP06.csv"
+   ,"SNEDH-48c1d767-cb71-48f0-a36a-2d937cf15c45" "https://www.inegi.org.mx/contenidos/datosgob/mcr07_eliminacion_excretas.csv"
+   ,"SNEDH-23884293-8595-4b16-a7cf-09a269334a9c" "https://www.inegi.org.mx/contenidos/datosgob/mdr02_saneamiento_mejorado.csv"
    })
 
 (defn apify-files []
