@@ -504,9 +504,7 @@
 ,"SNEDH-RECURSO-INSP-AaR09" "http://amilcar.pm/user/pages/04.datos/06.SALUD/insp/AaR09%20Porcentaje%20de%20ni%C3%B1os%20de%2012%20a%2059%20meses%20con%20anemia%20nutricional.csv"
 ,"SNEDH-RECURSO-INSP-AcR03a" "http://amilcar.pm/user/pages/04.datos/06.SALUD/insp/AcR03a%20Porcentaje_de_hogares_cubiertos_por_un_programa_p%C3%BAblico_de_ayuda_alimentaria.csv"
 ,"SNEDH-97de02a0-611c-4be9-b7da-cbfe9407da7e" "https://www.inegi.org.mx/contenidos/datosgob/ccp05_trab_pub_sec_cult.csv"
-,"SNEDH-Temporal-SALUD-SjP01c" "http://amilcar.pm/user/pages/04.datos/06.SALUD/SjP01c.csv"
-
-   })
+,"SNEDH-Temporal-SALUD-SjP01c" "http://amilcar.pm/user/pages/04.datos/06.SALUD/SjP01c.csv"})
 
 (defn apify-files []
   (doall
