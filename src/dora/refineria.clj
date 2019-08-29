@@ -500,7 +500,7 @@
 ,"SNEDH-bc210836-cb91-4a33-969a-5a4f382f8149" "https://www.secciones.hacienda.gob.mx/work/models/asuntos_internacionales/datos_abiertos/TfP02.csv"
 ,"SNEDH-8f1ffc7e-9098-415f-be80-59c655dacd18" "http://datosabiertos.stps.gob.mx/Datos/Porcentaje_conciliaciones_resoluci%C3%B3n_favorable.csv"
 ,"SNEDH-d5c4f74b-18de-4b67-8c06-333dddbb38de" "http://datosabiertos.stps.gob.mx/Datos/Porcentaje_juicios_promovidos_favorables.csv"
-,"SNEDH-04b6b55c-b6be-4023-84e7-d405d8e98cac" "http://amilcar.pm/user/pages/04.datos/02.Conapred/CdP05_2011_2018.csv"
+,"SNEDH-04b6b55c-b6be-4023-84e7-d405d8e98cac" "http://www.conapred.org.mx/datosabiertos/TjR03b_2011_2018.csv"
 ,"SNEDH-RECURSO-INSP-AaR08" "http://amilcar.pm/user/pages/04.datos/06.SALUD/insp/AaR08%20Porcentaje_de_mujeres_embarazadas_con_anemia_nutricional.csv"
 ,"SNEDH-RECURSO-INSP-AaR09" "http://amilcar.pm/user/pages/04.datos/06.SALUD/insp/AaR09%20Porcentaje%20de%20ni%C3%B1os%20de%2012%20a%2059%20meses%20con%20anemia%20nutricional.csv"
 ,"SNEDH-RECURSO-INSP-AcR03a" "http://amilcar.pm/user/pages/04.datos/06.SALUD/insp/AcR03a%20Porcentaje_de_hogares_cubiertos_por_un_programa_p%C3%BAblico_de_ayuda_alimentaria.csv"
