@@ -473,7 +473,7 @@
 ,"SNEDH-inee-eap03-primaria-tip-serv" "https://www.inee.edu.mx/wp-content/uploads/2019/06/EaP03_primaria_tip_serv.csv"
 ,"SNEDH-inee-eap03-secundaria-tip-serv" "https://www.inee.edu.mx/wp-content/uploads/2019/06/EaP03_secundaria_tip_serv.csv"
 ,"SNEDH-inee-ear01-nacional-nivel" "https://www.inee.edu.mx/wp-content/uploads/2019/06/EaR01_nacional_nivel.csv"
-,"SNEDH-Temporal-IMSS-SSiP02-Actividad" "http://amilcar.pm/user/pages/04.datos/08.IMSS/SSiP02%20EntFed.csv"
+,"SNEDH-Temporal-IMSS-SSiP02-Actividad" "http://amilcar.pm/user/pages/04.datos/08.IMSS/SSiP02_ActEc.csv"
 ,"SNEDH-7b2ae874-9260-4526-8a88-a3bbcdbb8943" "http://amilcar.pm/user/pages/04.datos/13.Conacyt/Indicador-EcR03-2018.csv"
 ,"SNEDH-99cf58be-c0c6-40eb-8afa-e08286b29adc" "http://amilcar.pm/user/pages/04.datos/11.sagarpa/AcP01.csv"
 ,"SNEDH-fe6af64e-e908-4553-a771-fca36172287d" "http://amilcar.pm/user/pages/04.datos/14.INEGI/car14a_tasa_crec_pob_ind.csv"
