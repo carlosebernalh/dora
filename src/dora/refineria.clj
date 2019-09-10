@@ -473,7 +473,13 @@
 ,"SNEDH-6c6f46ec-6c3c-4640-8b20-43582fe0f637" "http://amilcar.pm/user/pages/04.datos/06.SALUD/insp/AaR11%20Prevalencia_de_diabetes_en_adolescentes_y_adultos.csv"
 ,"SNEDH-bae52ade-9285-4ac3-a853-0ce9e715e664" "http://amilcar.pm/user/pages/04.datos/06.SALUD/insp/AaR12%20Prevalencia_de_hipertensi%C3%B3n_arterial_en_adolescentes_y_adultos_por_dia.csv"
 ,"SNEDH-Temporal-SEP-EcP02-Entidad" "http://amilcar.pm/user/pages/04.datos/01.SEP/EcP02-BE_Entidades.csv"
-,"SNEDH-Temporal-SEP-EcP02-Nivel" "http://amilcar.pm/user/pages/04.datos/01.SEP/EcP02-BE_Nivel.csv"})
+,"SNEDH-Temporal-SEP-EcP02-Nivel" "http://amilcar.pm/user/pages/04.datos/01.SEP/EcP02-BE_Nivel.csv"
+,"SNEDH-Temporal-SEMARNAT-Mdp01a-entidad" "http://amilcar.pm/user/pages/04.datos/12.SEMARNAT/MdP01a_entidad.csv"
+,"SNEDH-Temporal-SEMARNAT-Mdp01a-tipo-actividad" "http://amilcar.pm/user/pages/04.datos/12.SEMARNAT/MdP01a_tipo_act.csv"
+,"SNEDH-Temporal-SEMARNAT-Mdp01a-tipo-est" "http://amilcar.pm/user/pages/04.datos/12.SEMARNAT/MdP01a_tipo_est.csv"
+,"SNEDH-Temporal-SEMARNAT-Mje03b" "http://amilcar.pm/user/pages/04.datos/12.SEMARNAT/MjE03b.csv"
+,"SNEDH-Temporal-SEMARNAT-MjP02-entidad" "http://amilcar.pm/user/pages/04.datos/12.SEMARNAT/MjP02_entidad.csv"
+,"SNEDH-Temporal-SEMARNAT-MjP02-materia" "http://amilcar.pm/user/pages/04.datos/12.SEMARNAT/MjP02_materia.csv"})
 
 (defn apify-files []
   (doall
