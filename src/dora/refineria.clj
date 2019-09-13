@@ -322,7 +322,7 @@
 ,"SNEDH-5ffb6763-9279-4c27-95eb-96057d676a56" "https://www.inegi.org.mx/contenidos/datosgob/tar08b_muj_fun_pub.csv"
 ,"SNEDH-12c6f694-a632-4f35-9d30-cb9384383557" "https://www.inegi.org.mx/contenidos/datosgob/tar09_tasa_part_per_dis.csv"
 ,"SNEDH-Temporal-STPS-TcP03" "http://datosabiertos.stps.gob.mx/datos/CNDHProtocolo/TcP03Tasadeinspeccionlaboral.csv"
-,"SNEDH-Temporal-STPS-TcR01" "http://datosabiertos.stps.gob.mx/datos/CNDHProtocolo/SNETotalAteCol.csv"
+,"SNEDH-Temporal-STPS-TcR01" "http://amilcar.pm/user/pages/04.datos/04.STPS/SNETotalAteCol.csv"
 ,"SNEDH-5828c689-66bd-4c9e-9827-20d0336d11e0" "https://www.inegi.org.mx/contenidos/datosgob/tcr03_desocu_larga_dur.csv"
 ,"SNEDH-Temporal-STPS-TcR04" "http://datosabiertos.stps.gob.mx/datos/CNDHProtocolo/NodeContratosColectivosTcR04.csv"
 ,"SNEDH-fcaec197-d30a-407a-bbea-9009a73db43b" "https://www.inegi.org.mx/contenidos/datosgob/tcr05_pob_ocu.csv"
