@@ -476,7 +476,8 @@
 ,"SNEDH-Temporal-SEMARNAT-Mdp01a-tipo-est" "http://amilcar.pm/user/pages/04.datos/12.SEMARNAT/MdP01a_tipo_est.csv"
 ,"SNEDH-Temporal-SEMARNAT-Mje03b" "http://amilcar.pm/user/pages/04.datos/12.SEMARNAT/MjE03b.csv"
 ,"SNEDH-Temporal-SEMARNAT-MjP02-entidad" "http://amilcar.pm/user/pages/04.datos/12.SEMARNAT/MjP02_entidad.csv"
-,"SNEDH-Temporal-SEMARNAT-MjP02-materia" "http://amilcar.pm/user/pages/04.datos/12.SEMARNAT/MjP02_materia.csv"})
+,"SNEDH-Temporal-SEMARNAT-MjP02-materia" "http://amilcar.pm/user/pages/04.datos/12.SEMARNAT/MjP02_materia.csv"
+,"SNEDH-Temporal-IMSS-TaR07" "http://amilcar.pm/user/pages/04.datos/08.IMSS/TaR07.csv"})
 
 (defn apify-files []
   (doall
