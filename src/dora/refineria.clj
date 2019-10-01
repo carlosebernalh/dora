@@ -477,7 +477,9 @@
 ,"SNEDH-Temporal-SEMARNAT-Mje03b" "http://amilcar.pm/user/pages/04.datos/12.SEMARNAT/MjE03b.csv"
 ,"SNEDH-Temporal-SEMARNAT-MjP02-entidad" "http://amilcar.pm/user/pages/04.datos/12.SEMARNAT/MjP02_entidad.csv"
 ,"SNEDH-Temporal-SEMARNAT-MjP02-materia" "http://amilcar.pm/user/pages/04.datos/12.SEMARNAT/MjP02_materia.csv"
-,"SNEDH-Temporal-IMSS-TaR07" "http://amilcar.pm/user/pages/04.datos/08.IMSS/TaR07.csv"})
+,"SNEDH-Temporal-IMSS-TaR07" "http://amilcar.pm/user/pages/04.datos/08.IMSS/TaR07.csv"
+,"SNEDH-Coneval-EaR06a-Entidad" "https://www.coneval.org.mx/Informes/Pobreza/Datos_abiertos/ODS/EaR06a_Porcentaje_de_la_poblacion_con_carencia_por_rezago_educativo_ef.csv"
+,"SNEDH-Coneval-EaR06a-Grupos" "https://www.coneval.org.mx/Informes/Pobreza/Datos_abiertos/ODS/EaR06a_Porcentaje_de_la_poblacion_con_carencia_por_rezago_educativo_gpos.csv"})
 
 (defn apify-files []
   (doall
