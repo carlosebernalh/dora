@@ -52,7 +52,7 @@
 ,"SNEDH-84cf0b68-c6d8-4d39-8aeb-10b21a25e199" "https://www.secciones.hacienda.gob.mx/work/models/asuntos_internacionales/datos_abiertos/CfE03.csv"
 ,"SNEDH-abad5c4d-2ed5-4539-8a5e-1061efb9a391" "https://www.secciones.hacienda.gob.mx/work/models/asuntos_internacionales/datos_abiertos/CfP01.csv"
 ,"SNEDH-4f5c2305-f7a5-4446-80bd-3772c236eade" "https://www.secciones.hacienda.gob.mx/work/models/asuntos_internacionales/datos_abiertos/CfR03.csv"
-,"SNEDH-6b1a843f-c744-49ff-9ace-d06047a15692" "https://www.secciones.hacienda.gob.mx/work/models/asuntos_internacionales/datos_abiertos/MfE01.csv"
+,"SNEDH-6b1a843f-c744-49ff-9ace-d06047a15692" "http://amilcar.pm/user/pages/04.datos/16.SHCP/MfE01.csv"
 ,"SNEDH-ff674a7f-502d-4fe0-8bf2-d92cc922f52f" "http://amilcar.pm/user/pages/04.datos/16.SHCP/MfP01.csv"
 ,"SNEDH-23b19966-84bd-4b1b-8db0-03c11f144ccd" "https://www.secciones.hacienda.gob.mx/work/models/asuntos_internacionales/datos_abiertos/TfE01.csv"
 ,"SNEDH-950d0dd2-3795-47da-8f47-e0792857a68e" "https://www.secciones.hacienda.gob.mx/work/models/asuntos_internacionales/datos_abiertos/TfE02.csv"
