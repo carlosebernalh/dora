@@ -394,7 +394,7 @@
 ,"SNEDH-e6c8ebba-0402-45c0-b555-077770e4b7ab" "http://amilcar.pm/user/pages/04.datos/01.SEP/EfP07TotalPorNivel.csv"
 ,"SNEDH-inee-efr01a-preescolar-tipo" "https://www.inee.edu.mx/wp-content/uploads/2019/06/EfR01a_preescolar_tipo.csv"
 ,"SNEDH-inee-efr01a-primaria-tipo" "https://www.inee.edu.mx/wp-content/uploads/2019/06/EfR01a_primaria_tipo.csv"
-,"SNEDH-7b1698eb-331d-4e51-900d-c2ac01d410dd" "https://www.secciones.hacienda.gob.mx/work/models/asuntos_internacionales/datos_abiertos/MfE01.csv"
+,"SNEDH-7b1698eb-331d-4e51-900d-c2ac01d410dd" "http://amilcar.pm/user/pages/04.datos/MfE01.csv"
 ,"SNEDH-942070a4-4e15-405c-8660-6843ecbf56d8" "http://amilcar.pm/user/pages/04.datos/02.Conapred/TdP01_2011_2018.csv"
 ,"SNEDH-c1309f1b-7fdd-441c-91b8-8724d90ea480" "http://amilcar.pm/user/pages/04.datos/16.SHCP/UfP01.csv"
 ,"SNEDH-Temporal-CONAPO-SdR04-Grupos" "http://amilcar.pm/user/pages/04.datos/07.CONAPO/SdR04-Grupo.csv"
